@@ -1,11 +1,4 @@
-import mglearn
-from sklearn.datasets import load_iris
-import pandas as pd
-import numpy as np
-from sklearn.model_selection import train_test_split
-import matplotlib.pyplot as plt
-
-from sklearn.neighbors import KNeighborsClassifier
+from myImport import *
 
 if __name__ == '__main__':
     iris_dataset = load_iris()  # load_iris 返回的iris 对象是一个Bunch 对象，与字典非常相似，里面包含键和值：

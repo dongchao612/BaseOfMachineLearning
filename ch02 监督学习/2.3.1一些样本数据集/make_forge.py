@@ -1,7 +1,4 @@
-import mglearn
-from mglearn.datasets import make_forge
-import matplotlib.pyplot as plt
-import numpy as np
+from myImport import *
 
 if __name__ == '__main__':
     X, y = make_forge()

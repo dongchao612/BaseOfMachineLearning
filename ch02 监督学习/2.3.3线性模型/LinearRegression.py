@@ -1,16 +1,17 @@
-from mysklearn import *
+from myImport import *
 
 if __name__ == '__main__':
-    # mglearn.plots.plot_linear_regression_wave()
+    # plot_linear_regression_wave()
+    # plt.savefig("plot_linear_regression_wave.png")# w[0]: 0.393906  b: -0.031804
     # plt.show()
 
     X, y = make_wave()
     X_train, X_test, y_train, y_test = train_test_split(X, y)
-    print("X_train shape:{}".format(X_train.shape))  # X_train shape:(75, 1)
-    print("y_train shape:{}".format(y_train.shape))  # y_train shape:(75,)
+    # print("X_train shape:{}".format(X_train.shape))  # X_train shape:(75, 1)
+    # print("y_train shape:{}".format(y_train.shape))  # y_train shape:(75,)
 
-    print("X_test shape:{}".format(X_test.shape))  # X_test shape:(25, 1)
-    print("y_test shape:{}".format(y_test.shape))  # y_test shape:(25,)
+    # print("X_test shape:{}".format(X_test.shape))  # X_test shape:(25, 1)
+    # print("y_test shape:{}".format(y_test.shape))  # y_test shape:(25,)
 
     lr = LinearRegression()
     lr.fit(X_train, y_train)
@@ -22,18 +23,18 @@ if __name__ == '__main__':
 
     X, y = load_extended_boston()
     X_train, X_test, y_train, y_test = train_test_split(X, y)
-    print("X_train shape:{}".format(X_train.shape))  # X_train shape:(379, 104)
-    print("y_train shape:{}".format(y_train.shape))  # y_train shape:(379,)
-
-    print("X_test shape:{}".format(X_test.shape))  # X_test shape:(127, 104)
-    print("y_test shape:{}".format(y_test.shape))  # y_test shape:(127,)
+    # print("X_train shape:{}".format(X_train.shape))  # X_train shape:(379, 104)
+    # print("y_train shape:{}".format(y_train.shape))  # y_train shape:(379,)
+    #
+    # print("X_test shape:{}".format(X_test.shape))  # X_test shape:(127, 104)
+    # print("y_test shape:{}".format(y_test.shape))  # y_test shape:(127,)
     lr = LinearRegression()
     lr.fit(X_train, y_train)
 
     print("lr.corf_: {}".format(lr.coef_))  # lr.corf_: (104,)
     print("lr.intercept_:{}".format(lr.intercept_))
-    print("lr train set accuracy: {:.2f}".format(lr.score(X_train, y_train)))
-    print("lr test set accuracy: {:.2f}".format(lr.score(X_test, y_test)))
+    print("lr train set accuracy: {:.2f}".format(lr.score(X_train, y_train)))# 0.95
+    print("lr test set accuracy: {:.2f}".format(lr.score(X_test, y_test)))# 0.77
 
     ridge = Ridge()
     ridge10 = Ridge(alpha=10)
@@ -43,12 +44,18 @@ if __name__ == '__main__':
     ridge10.fit(X_train, y_train)
     ridge01.fit(X_train, y_train)
 
-    print("ridge train set accuracy: {:.2f}".format(ridge.score(X_train, y_train)))
-    print("ridge test set accuracy: {:.2f}".format(ridge.score(X_test, y_test)))
+    #print("ridge.corf_: {}".format(ridge.coef_))
+    print("ridge.intercept_:{}".format(ridge.intercept_))# 20.662500477160563
+    print("ridge train set accuracy: {:.2f}".format(ridge.score(X_train, y_train)))# 0.85
+    print("ridge test set accuracy: {:.2f}".format(ridge.score(X_test, y_test)))# 0.88
 
+    #print("ridge.corf_: {}".format(ridge.coef_))
+    print("ridge.intercept_:{}".format(ridge10.intercept_))# 24.735567053962743
     print("ridge10 train set accuracy: {:.2f}".format(ridge10.score(X_train, y_train)))
     print("ridge10 test set accuracy: {:.2f}".format(ridge10.score(X_test, y_test)))
 
+    #print("ridge.corf_: {}".format(ridge.coef_))
+    print("ridge.intercept_:{}".format(ridge01.intercept_))# 7.381260546097529
     print("ridge01 train set accuracy: {:.2f}".format(ridge01.score(X_train, y_train)))
     print("ridge01 test set accuracy: {:.2f}".format(ridge01.score(X_test, y_test)))
 
@@ -64,7 +71,8 @@ if __name__ == '__main__':
     # plt.savefig("ridge.png")
     # plt.show()
 
-    # mglearn.plots.plot_ridge_n_samples()
+    # plot_ridge_n_samples()
+    # plt.savefig("plot_ridge_n_samples.png")
     # plt.show()
 
     lasso = Lasso()

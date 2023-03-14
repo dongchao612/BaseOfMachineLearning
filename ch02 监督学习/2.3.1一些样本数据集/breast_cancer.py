@@ -1,5 +1,4 @@
-from sklearn.datasets import load_breast_cancer
-import numpy as np
+from myImport import *
 
 if __name__ == '__main__':
     cancer = load_breast_cancer()

@@ -1,11 +1,7 @@
-import mglearn
-import matplotlib.pyplot as plt
-from mglearn.datasets import make_forge
-from sklearn.model_selection import train_test_split
-from sklearn.neighbors import KNeighborsClassifier
+from myImport import *
 
 if __name__ == '__main__':
-    # mglearn.plots.plot_knn_classification(n_neighbors=3)
+    # plot_knn_classification(n_neighbors=3)
     # plt.savefig("plot_knn_classification_3.png")
     # plt.show()
 

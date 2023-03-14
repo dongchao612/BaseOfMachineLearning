@@ -1,4 +1,9 @@
-from mysklearn import *
+import mglearn
+import matplotlib.pyplot as plt
+from mglearn.datasets import make_wave, load_extended_boston
+from sklearn.datasets import load_breast_cancer
+from sklearn.linear_model import LinearRegression, Ridge, LogisticRegression
+from sklearn.model_selection import train_test_split
 
 if __name__ == '__main__':
     # X, y = make_forge()

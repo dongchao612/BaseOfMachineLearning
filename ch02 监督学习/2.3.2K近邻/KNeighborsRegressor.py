@@ -1,14 +1,9 @@
-import mglearn
-import mglearn
-import matplotlib.pyplot as plt
-from mglearn.datasets import make_forge, make_wave
-from sklearn.model_selection import train_test_split
-from sklearn.neighbors import KNeighborsRegressor
-import  numpy as np
+from myImport import *
+
 if __name__ == '__main__':
-    # mglearn.plots.plot_knn_regression(n_neighbors=3)
-    # plt.savefig("plot_knn_regression_3.png")
-    # plt.show()
+    plot_knn_regression(n_neighbors=3)
+    plt.savefig("plot_knn_regression_3.png")
+    plt.show()
 
     X, y = make_wave()
     X_train, X_test, y_train, y_test = train_test_split(X, y)
@@ -22,7 +17,8 @@ if __name__ == '__main__':
 
     print("test set predictions: \n{}".format(reg.predict(X_test)))
     print("test set R^2: {:.2f}".format(reg.score(X_test, y_test)))
-    #
+
+    # 分析KNeighborsRegressor
     fig, axes = plt.subplots(1, 3, figsize=(15, 4))
     # 创建1000个数据点，在-3和3之间均匀分布
     line = np.linspace(-3, 3, 1000).reshape(-1, 1)

@@ -1,5 +1,4 @@
-from mglearn.datasets import load_extended_boston
-from sklearn.datasets import load_boston
+from myImport import *
 
 if __name__ == '__main__':
     boston = load_boston()
