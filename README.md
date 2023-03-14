@@ -1,7 +1,7 @@
 # BaseOfMachineLearning
 Introduction to Machine Learning with Python
 
-以为机器学习算法实践为重，使用scikit-klearn库从头构建机器学习应用
+以机器学习算法实践为重，使用scikit-klearn库从头构建机器学习应用
 
 # 用到库的版本
 ```text
