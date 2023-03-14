@@ -15,6 +15,6 @@ mglearn version:0.1.9
 sklearn version:0.24.2
 ```
 
-## ch01 引言
+## CH01 引言
 
 ## CH02 监督学习
