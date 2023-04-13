@@ -1,6 +1,10 @@
+from mglearn.datasets import load_extended_boston
+from sklearn.datasets import load_boston
+
 from myImport import *
 
 if __name__ == '__main__':
+    # 加载数据集
     boston = load_boston()
     print("data shape: {}".format(boston.data.shape))  # data shape: (506, 13)
 
