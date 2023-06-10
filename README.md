@@ -5,16 +5,12 @@ Introduction to Machine Learning with Python
 
 # 用到库的版本
 ```text
-Python version:3.9.7 (default, Sep 16 2021, 16:59:28) [MSC v.1916 64 bit (AMD64)]
-pandas version:1.3.4
-matplotlib version:3.2.2
-numpy version:1.20.3
-scipy version:1.7.1
-IPython version:7.29.0
+Python version:3.8.16 (default, Mar  2 2023, 03:18:16) [MSC v.1916 64 bit (AMD64)]
+pandas version:1.5.3
+matplotlib version:3.7.1
+numpy version:1.23.5
+scipy version:1.10.1
+IPython version:8.12.0
 mglearn version:0.1.9
-sklearn version:0.24.2
+sklearn version:1.1.1
 ```
-
-## ch01 引言
-
-## CH02 监督学习

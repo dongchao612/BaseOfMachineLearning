@@ -67,6 +67,11 @@
           <option value="nyudconfig" />
           <option value="FCN.nyud_train.nyudfcnNet" />
           <option value="KNN" />
+          <option value="bool.type" />
+          <option value="object.coef_" />
+          <option value="object.intercept_" />
+          <option value="object.score" />
+          <option value="object.fit_predict" />
         </list>
       </option>
     </inspection_tool>
